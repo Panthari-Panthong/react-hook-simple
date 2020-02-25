@@ -15,7 +15,9 @@ const ResourceList = ({ resource }) => {
     fetchResource(resource);
   }, [resource]);
 
-  return <div>{resources.length}</div>;
+  return <div>
+    {resources.length}
+    </div>;
 };
 
 export default ResourceList;
