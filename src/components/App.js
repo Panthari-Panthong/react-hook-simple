@@ -6,10 +6,10 @@ const App = () => {
   // 
 
     return (
-      <div>
+      <div className="ui container">
         <div>
-          <button onClick={() => setResource("posts")}>Posts</button>
-          <button onClick={() => setResource("todos")}>Todos</button>
+          <button onClick={() => setResource("posts")} className="ui secondary button">Posts</button>
+          <button onClick={() => setResource("todos")} className="ui button">Todos</button>
         </div>
         <ResourceList resource={resource} />
       </div>
